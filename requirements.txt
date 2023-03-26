@@ -1,0 +1,15 @@
+numpy
+opencv-python==4.7.0.72
+pandas==1.5.3
+Pillow==9.4.0
+python-dateutil 
+python-dotenv==1.0.0
+python-multipart==0.0.6
+scipy==1.10.0
+seaborn 
+streamlit==1.20.0
+streamlit-option-menu==0.3.2
+toml==0.10.2
+tomlkit==0.11.6
+ujson==5.7.0
+zipp==3.15.0
