@@ -1,1 +1,1 @@
-# web-app-classificator
+# Web-app-classificator
