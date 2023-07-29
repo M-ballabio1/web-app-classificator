@@ -35,6 +35,11 @@ img_pipe = Image.open('img/mlops_pipe_fin.png')
 
 #starting application
 st.set_page_config(page_title="Ultrasound Plane Classificator", page_icon="🩺", layout="wide")
+
+# Aggiungi questa linea per inizializzare la variabile di sessione
+if 'call_count' not in st.session_state:
+    st.session_state.call_count = 0
+
 st.image(img_logo)
 
 #sidebar
@@ -132,6 +137,11 @@ if selected=="Documentation":
 
 elif selected == "Predictor":
 
+    # Controlla il numero massimo di chiamate prima di procedere
+    if st.session_state.call_count >= 3:
+        st.warning("Hai raggiunto il numero massimo consentito di chiamate all'API.")
+        st.stop()
+
     st.title("MobileNet Image classification model 🚀")
     st.subheader("The image classification model classifies image in 3 categories: Brain, Cervix, Throrax")
 
@@ -157,6 +167,7 @@ elif selected == "Predictor":
     c1.write("")
 
     if uploaded_image_flag and c1.button("Predict class ➡️"):
+        st.session_state.call_count += 1
         with st.spinner("Predicting..."):
             segments = process(upload, backend)
         #mb_pred_round = np.round(predict_result)
