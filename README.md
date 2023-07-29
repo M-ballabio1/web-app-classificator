@@ -1,6 +1,6 @@
 # Web-app-classificator
 
-## Welcome to the Medical Doctor Client Web Application for Ultrasound classification!
+### Welcome to the Medical Doctor Client Web Application for Ultrasound classification!
 
 #### Goal: 
 This web application simulates the interaction of a medical doctor client with a Web service API hosted on Google Cloud Run. The API's primary objective is to process the medical images received from the client using a powerful Deep Learning algorithm. It then provides a JSON response containing the probabilities of classification for the image across three classes.
