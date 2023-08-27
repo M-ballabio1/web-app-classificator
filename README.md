@@ -13,4 +13,4 @@ Please note that this is a simulated environment, and the results presented here
 ![Immagine 2023-07-29 165433](https://github.com/M-ballabio1/web-app-classificator/assets/78934727/f7ac645d-64f2-4190-a64c-a76e5e5dac9a)
 
 
-### Please if you want to see the complete project, you can follow this link[https://github.com/M-ballabio1/API-Ultrasound-Classificator] to the API Ultrasound Classificator.
+#### Please if you want to see the complete project, you can follow this [link](https://github.com/M-ballabio1/API-Ultrasound-Classificator) to the API Ultrasound Classificator.
